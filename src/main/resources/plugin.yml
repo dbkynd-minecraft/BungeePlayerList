@@ -1,0 +1,4 @@
+name: DBPlayerList
+main: com.dbkynd.DBPlayerList.Main
+version: "1.0"
+author: DBKynd
