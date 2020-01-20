@@ -1,4 +1,4 @@
-name: DBPlayerList
-main: com.dbkynd.DBPlayerList.Main
-version: "1.0"
+name: BungeePlayerList
+main: com.dbkynd.BungeePlayerList.BungeePlayerList
+version: '${project.version}'
 author: DBKynd

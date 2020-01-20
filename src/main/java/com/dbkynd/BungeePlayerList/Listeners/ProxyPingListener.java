@@ -1,15 +1,15 @@
-package com.dbkynd.DBPlayerList.listener;
+package com.dbkynd.BungeePlayerList.Listeners;
 
-import com.dbkynd.DBPlayerList.Main;
+import com.dbkynd.BungeePlayerList.BungeePlayerList;
 import net.md_5.bungee.api.ServerPing;
 import net.md_5.bungee.api.event.ProxyPingEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 
-public class ServerListListener implements Listener {
-    private final Main plugin;
+public class ProxyPingListener implements Listener {
+    BungeePlayerList plugin;
 
-    public ServerListListener(Main plugin) {
+    public ProxyPingListener(BungeePlayerList plugin) {
         this.plugin = plugin;
     }
 
@@ -17,7 +17,7 @@ public class ServerListListener implements Listener {
     public void onPing(ProxyPingEvent event) {
         ServerPing response = event.getResponse();
         ServerPing.Players players = response.getPlayers();
-        ServerPing.PlayerInfo[] playerInfo = this.plugin.getProxy().getPlayers().stream().map(player -> new ServerPing.PlayerInfo(player.getName(), player.getUniqueId())).toArray(ServerPing.PlayerInfo[]::new);
+        ServerPing.PlayerInfo[] playerInfo = plugin.getProxy().getPlayers().stream().map(player -> new ServerPing.PlayerInfo(player.getName(), player.getUniqueId())).toArray(ServerPing.PlayerInfo[]::new);
         players.setSample(playerInfo);
         response.setPlayers(players);
         event.setResponse(response);
