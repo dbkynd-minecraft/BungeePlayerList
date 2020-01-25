@@ -1,4 +1,5 @@
 name: BungeePlayerList
-main: com.dbkynd.BungeePlayerList.BungeePlayerList
-version: '${project.version}'
+version: ${project.version}
+main: com.dbkynd.bungeeplayerlist.BungeePlayerList
 author: DBKynd
+api-version: 1.15

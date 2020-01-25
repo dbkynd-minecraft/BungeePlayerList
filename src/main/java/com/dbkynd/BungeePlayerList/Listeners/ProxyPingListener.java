@@ -1,6 +1,6 @@
-package com.dbkynd.BungeePlayerList.Listeners;
+package com.dbkynd.bungeeplayerlist.listeners;
 
-import com.dbkynd.BungeePlayerList.BungeePlayerList;
+import com.dbkynd.bungeeplayerlist.BungeePlayerList;
 import net.md_5.bungee.api.ServerPing;
 import net.md_5.bungee.api.event.ProxyPingEvent;
 import net.md_5.bungee.api.plugin.Listener;
