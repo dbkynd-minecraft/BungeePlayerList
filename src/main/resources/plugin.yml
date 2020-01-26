@@ -1,5 +1,6 @@
 name: BungeePlayerList
 version: ${project.version}
 main: com.dbkynd.bungeeplayerlist.BungeePlayerList
+description: Show player list on hover in the multiplayer menu.
 author: DBKynd
-api-version: 1.15
+api-version: '1.15'
