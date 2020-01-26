@@ -7,7 +7,7 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 
 public class ProxyPingListener implements Listener {
-    BungeePlayerList plugin;
+    final BungeePlayerList plugin;
 
     public ProxyPingListener(BungeePlayerList plugin) {
         this.plugin = plugin;
